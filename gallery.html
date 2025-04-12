@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Image Gallery</title>
+  <link rel="stylesheet" href="gallery-styles.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Interactive Image Gallery</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search images..." />
+      <button id="darkModeBtn">Toggle Dark Mode</button>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipNm5LBi30w7Fi2Pjyaoz6uPNeWGnEAnxbtqzBC5=s1360-w1360-h1020" alt="Taj Mahal" />
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB_Ks35qBtIxCvHC_3gm-fbRLPQ0aDRiQfEDHVQJt7MxzCcHFyL144VkPtLuAeBAjex2T4aSCf87_P8y-thdIfdaAKTe9Xc8TNcPl07t5h9Wpgz5c1wEPROIWML5GT7OSpbgEVkAmw=w270-h312-n-k-no" alt="Warangal Fort" />
+    <img src="https://lh3.googleusercontent.com/p/AF1QipNUBIAeECoDS-wSe0hNDcXDwey7hbEB6IsAvws4=w270-h312-n-k-no" alt="India Gate" />
+    <!-- Add more images as needed -->
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" />
+    <div id="caption"></div>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+
+  <script src="gallery-script.js"></script>
+</body>
+</html>
